@@ -1,0 +1,101 @@
+a{
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+}
+.navbar{
+  width: 100%;
+  max-width: 350px;
+  /* outline: 1px dotted red; */
+  padding: 0px 10px;
+  display: flex;
+  height: max-content;
+  flex-direction: column;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 102px; 
+  z-index: 10;
+  background-color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar .navNavbtn{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(209, 209, 209, 0.5);
+}
+.navbar .navNavbtn a{
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 2px;
+  transition: background-color 0.15s ease-in-out;
+}
+.navbar .navNavbtn a:hover{
+  background-color: #F1F1F2;
+}
+.navbar .navLogin{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(209, 209, 209, 0.5);
+}
+.navbar .navLogin span{
+  color: rgba(22, 24, 35, 0.5);
+  font-size: 16px;
+  line-height: 22px;
+
+}
+.navbar .navLogin button{
+  background-color: transparent;
+  border: 1px solid #FE2C55;
+  color: #FE2C55;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+}
+.navbar .navLogin button:hover{
+  background-color: rgba(254, 44, 85, 0.06);
+}
+.following{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.following span{
+  padding: 0px 10px 5px 10px;
+}
+
+/* 1038 */
+@media all and (max-width: 1039px){
+  .navbar .navLogin{
+    display: none;
+  }
+  .navbar{
+    max-width: 73px;
+  }
+  .navbar .navNavbtn{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar .navNavbtn a > span{
+    display: none;
+  }
+  .navbar .following>span{
+    display: none;
+  }
+  .navbar .following .fUser{
+    display: none;
+  }
+  
+}

@@ -1,0 +1,53 @@
+
+.useerFollowing{
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 2px;
+  gap: 10px;
+  transition: background-color 0.15s ease-in-out;
+}
+.useerFollowing:hover{
+  background-color: #F1F1F2;
+}
+.fImg{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  outline: 1px solid #FE2C55;
+  padding: 3px;
+}
+.fImg img{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+}
+.fUserName{
+  display: flex;
+  gap: 2.5px;
+  align-items: center;
+}
+.fUserName span{
+  color: rgb(22, 24, 35);
+  font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: -2px;
+  max-width: 260px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+}
+.fUser>span{
+  color: rgba(22, 24, 35, 0.75);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  max-width: 260px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

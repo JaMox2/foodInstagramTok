@@ -1,0 +1,99 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 20px 10px;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 10; 
+  background-color: white;
+  border-bottom: 1.5px solid #A7A7AB;
+}
+.header > a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: -2px;
+}
+.header > a span{
+  color: #FE2C55;
+}
+.serach{
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 5px 10px;
+  background-color: #F1F1F2;
+  gap: 5px;
+  border: 1px solid white;
+}
+.serach:focus-within{
+  border: 1px solid #A7A7AB;
+}
+.serach input{
+  border: none;
+  background: none;
+  color: rgba(22, 24, 35, 1.0);
+  width: 300px;
+  font-size: 15px;
+  border-right: 1px solid #A7A7AB;
+}
+.serach input:focus{
+  caret-color: #FE2C55;
+  outline: none;
+}
+.serach button{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgba(22, 24, 35, 1.0);
+}
+.signIn{
+  display: flex;
+  gap: 10px;
+}
+.signIn button{
+  cursor: pointer;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}
+.signIn button:nth-child(1){
+  display: flex;
+  gap: 5px;
+  background-color: white;
+  border: 1px solid #A7A7AB;
+  
+}
+.signIn button:nth-child(1):hover{
+  background-color: rgb(245, 245, 245);
+  /* background-color: rgb(255, 255, 255); */
+}
+.signIn button:nth-child(2):hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#FE2C55;;
+}
+.signIn button:nth-child(2){
+  background-color: #FE2C55;
+  color: white;
+  border: none;
+}
+.signIn button:nth-child(1) svg{
+  font-weight: 700;
+  font-size: 16px;
+}
+.signIn button:nth-child(1), .signIn button:nth-child(2){
+  padding: 7.5px 15px;
+  font-size: 17px;
+  
+}
+.signIn button:nth-child(3){
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 0 12.5px;
+  font-weight: bold;
+}
